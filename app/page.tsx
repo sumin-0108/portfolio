@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { ContactTallyForm } from "@/components/contact-tally-form";
 import { HeroSpotlight } from "@/components/hero-spotlight";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { MagicCard } from "@/components/ui/magic-card";
@@ -26,10 +27,7 @@ export default function Home() {
           <a href="#works" className="transition-colors hover:text-foreground">
             Works
           </a>
-          <a
-            href="mailto:sum.oh@samsung.com"
-            className="transition-colors hover:text-foreground"
-          >
+          <a href="#contact" className="transition-colors hover:text-foreground">
             Contact
           </a>
         </nav>
@@ -231,6 +229,26 @@ export default function Home() {
             </BlurFade>
           ))}
         </div>
+      </section>
+
+      <section
+        id="contact"
+        className="mx-auto max-w-5xl px-6 pb-24 pt-8 text-center sm:px-8 lg:pb-28 lg:pt-12"
+      >
+        <BlurFade inView delay={0.1}>
+          <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
+            함께 만들 프로젝트
+          </h2>
+        </BlurFade>
+
+        <BlurFade inView delay={0.2}>
+          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-foreground/65 sm:mt-5 sm:text-lg">
+            브랜드, 제품, 인터페이스, 콘텐츠를 함께 만들고 싶다면 간단히
+            남겨주세요.
+          </p>
+        </BlurFade>
+
+        <ContactTallyForm />
       </section>
     </div>
   );
