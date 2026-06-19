@@ -109,6 +109,13 @@ export default function Home() {
                   About 보기
                   <ArrowUpRight className="size-3.5" strokeWidth={2.5} />
                 </a>
+                <Link
+                  href="/brand-kit"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-foreground/50 transition-colors hover:text-foreground"
+                >
+                  Brand Kit Lab
+                  <ArrowUpRight className="size-3.5" strokeWidth={2.5} />
+                </Link>
               </div>
             </BlurFade>
           </div>
